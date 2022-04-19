@@ -1,4 +1,165 @@
 .home-header-container{
-    height:240px;
-    border: 1px solid red;
+    height:60px;
+    padding: 0 40px;
+    width: 100%;
+    .home-header-content{
+        width: 100%;
+        height: 100%;
+        display: flex;
+
+        .home-header-left-content{
+            align-items: center;
+            width: 20%;
+            display: flex;
+
+            .fa-bars{
+                font-size: 25px;
+                color: grey;
+                cursor: pointer;
+            }
+            .home-header-logo{
+                cursor: pointer;
+                transform: scale(0.5,0.5);
+                height: 100%;
+                width: 100%;
+                margin-left: -45px;
+            }
+        }
+        .home-header-center-content{
+            width: 55%;
+           
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .home-header-child-content{
+                cursor: pointer;
+                .home-header-child-content-subtitle{
+                    font-weight: 400;
+                    font-size: 12px;
+                }
+            }
+        }
+        .home-header-right-content{
+            padding: 0 40px;
+            display:flex;
+            align-items: center;
+            justify-content: flex-end;
+            width: 25%;
+            .home-header-support{
+                cursor: pointer;
+                padding-right: 50px;
+                display: flex;
+                align-items: center;
+                i{
+                    color: #45c3d2;
+                }
+            }
+            .home-header-language-vi{
+                margin:0 10px;
+                cursor: pointer;
+                &.active{
+                    color: rgb(216, 69, 20);
+                }
+            }
+            .home-header-language-en{
+                margin:0 10px;
+                cursor: pointer;
+                &.active{
+                    color: rgb(53, 119, 173);
+                }
+            }
+        }
+    }
+}
+
+.home-header-banner{
+    background-image: url(../../assets/header-backgorund.jpg);
+    height: 650px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    display: flex;
+    flex-direction: column;
+    .content-up{
+        height: 65%;
+        padding-top: 40px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.25),rgba(255, 255, 255, 0.1));
+        .home-header-title-1{
+            text-align: center;
+            font-size:30px;
+            text-shadow: 1px 1px 1px #333;
+            margin-bottom: 10px;
+            color: white;
+        }
+        .home-header-title-2{
+            text-align: center;
+            font-size:30px;
+            text-shadow: 1px 1px 1px #333;
+            color: white;
+            margin-bottom: 15px;
+        }
+        .home-header-search{
+            width: fit-content;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            padding: 10px;
+            border-radius: 25px;
+            background: #f7d800;
+            i{
+                margin: 0 5px;
+            }
+            input{
+                height: 30px;
+                width: 360px;
+                background: transparent;
+                border: none;
+                outline: none;
+            }
+        }
+    }
+    .content-down{
+        background-image: linear-gradient(rgba(255, 255, 255, 0.1),rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 1));
+        height: 35%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+      
+        .home-header-options{
+            display: flex;
+            gap: 50px;
+            justify-content:center;
+            
+            .home-header-option{
+                width: 125px;
+               
+                text-align: center;
+                .home-header-option-icon{
+                    i{
+                        color:#49bce2;  
+                        font-size:20px;
+                    }
+                    background: white;
+                    width: 40px;
+                    height: 40px;
+                    padding: 10px;
+                    border-radius: 50%;
+                    margin: 0 auto;
+                }
+                .home-header-option-text{
+                    font-weight: 500;
+                    font-size: 17px;
+
+                    &:hover{
+                        cursor:pointer;
+                        color: #49bce2
+                    }
+                }
+            }
+
+        }
+    }
+    
 }
